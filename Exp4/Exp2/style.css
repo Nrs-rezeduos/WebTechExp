@@ -1,0 +1,42 @@
+/* External CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(28, 100, 193);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(35, 113, 190);
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(115, 112, 112);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
