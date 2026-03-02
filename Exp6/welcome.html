@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 id="welcomeMessage"></h2>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get("user");
+    document.getElementById("welcomeMessage").innerText =
+        "Welcome " + username + "!";
+</script>
+
+</body>
+</html>
