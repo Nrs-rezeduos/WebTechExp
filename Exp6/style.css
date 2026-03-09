@@ -44,7 +44,6 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
-
 button:hover {
     background-color: #3399ff;
 }
@@ -58,4 +57,25 @@ button:hover {
     color: #4da6ff;
     text-decoration: none;
     font-weight: bold;
+}
+
+footer {
+   position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.back-link {
+    text-decoration: none;
+    background-color: rgb(32, 152, 233);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(242, 242, 248);
+    display: inline-block;
+}
+
+.back-link:hover {
+    background-color: #add8e6;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student List</h1>
+        <div class="filters">
+            <input type="text" id="searchName" placeholder="Search by name" />
+            <select id="filterDept">
+                <option value="">All Departments</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Department</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody id="student-body">
+                <!-- populated by script -->
+            </tbody>
+        </table>
+        <div class="controls">
+            <button onclick="showHighest()">Show Highest Marks</button>
+            <button onclick="sortByMarks()">Sort by Marks</button>
+            <button onclick="showPassFail()">Pass/Fail</button>
+            <button onclick="toggleCase(true)">Uppercase Names</button>
+            <button onclick="toggleCase(false)">Lowercase Names</button>
+        </div>
+        <div id="results">
+            <div id="highest" class="result-box"></div>
+            <div id="passfail" class="result-box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+<footer>
+    <a class="back-link" href="../index.html">⬅ Back to Main Page</a>
+</footer>
+
+</body>
+</html>
