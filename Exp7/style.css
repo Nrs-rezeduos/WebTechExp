@@ -55,6 +55,24 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+.nav-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nav-buttons button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+}
+.nav-buttons button.active,
+.nav-buttons button:hover {
+    background-color: #005a99;
+}
+
 .filters {
     margin: 15px 0;
     display: flex;
@@ -72,6 +90,15 @@ button:hover {
 }
 #passfail {
     border-left: 4px solid #ffc107;
+}
+
+/* products styling */
+td.price {
+    color: #228B22;
+    font-weight: bold;
+}
+td.rating {
+    color: #d2691e;
 }
 
 footer {

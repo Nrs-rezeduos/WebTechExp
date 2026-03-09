@@ -2,41 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Dashboard</title>
+    <title>Student & Product Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Student List</h1>
-        <div class="filters">
-            <input type="text" id="searchName" placeholder="Search by name" />
-            <select id="filterDept">
-                <option value="">All Departments</option>
-            </select>
+        <div id="nav-buttons" class="nav-buttons">
+            <button onclick="switchTo('students')" class="active">Students</button>
+            <button onclick="switchTo('products')">Products</button>
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Department</th>
-                    <th>Marks</th>
-                </tr>
-            </thead>
-            <tbody id="student-body">
-                <!-- populated by script -->
-            </tbody>
-        </table>
-        <div class="controls">
-            <button onclick="showHighest()">Show Highest Marks</button>
-            <button onclick="sortByMarks()">Sort by Marks</button>
-            <button onclick="showPassFail()">Pass/Fail</button>
-            <button onclick="toggleCase(true)">Uppercase Names</button>
-            <button onclick="toggleCase(false)">Lowercase Names</button>
+        <!-- student section -->
+        <div id="student-section">
+            <h1>Student List</h1>
+            <div class="filters">
+                <input type="text" id="searchName" placeholder="Search by name" />
+                <select id="filterDept">
+                    <option value="">All Departments</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-body">
+                    <!-- populated by script -->
+                </tbody>
+            </table>
+            <div class="controls">
+                <button onclick="showHighest()">Show Highest Marks</button>
+                <button onclick="sortByMarks()">Sort by Marks</button>
+                <button onclick="showPassFail()">Pass/Fail</button>
+                <button onclick="toggleCase(true)">Uppercase Names</button>
+                <button onclick="toggleCase(false)">Lowercase Names</button>
+            </div>
+            <div id="results">
+                <div id="highest" class="result-box"></div>
+                <div id="passfail" class="result-box"></div>
+            </div>
         </div>
-        <div id="results">
-            <div id="highest" class="result-box"></div>
-            <div id="passfail" class="result-box"></div>
+        <!-- product section -->
+        <div id="product-section" style="display:none;">
+            <h1>Product List</h1>
+            <div class="filters">
+                <input type="text" id="searchProduct" placeholder="Search products" />
+                <select id="filterCategory">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="product-body">
+                    <!-- populated by script -->
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
