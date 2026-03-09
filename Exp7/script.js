@@ -121,6 +121,19 @@ function showHighest() {
     box.textContent = `Highest marks: ${max.name} - ${max.marks}`;
 }
 
+function showAllStudents() {
+    // clear filters and results, then display full list
+    nameInput.value = '';
+    deptSelect.value = '';
+    renderStudents(students);
+}
+
+function showAllProducts() {
+    productSearch.value = '';
+    categorySelect.value = '';
+    renderProducts(products);
+}
+
 function sortByMarks() {
     const sorted = [...students].sort((a, b) => b.marks - a.marks);
     renderStudents(sorted);
