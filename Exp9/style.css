@@ -1,0 +1,126 @@
+body{
+  margin:0;
+  font-family:sans-serif;
+  background: radial-gradient(circle at left, #0f172a, #020617);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+/* Calculator box */
+.calculator{
+  background: linear-gradient(145deg,#1e293b,#0f172a);
+  padding:28px;
+  border-radius:28px;
+
+  box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+}
+/* Display */
+.display{
+  background:#020617;
+  color:#e2e8f0;
+
+  height:90px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+
+  padding:0 20px;
+  font-size:34px;
+
+  border-radius:18px;
+  margin-bottom:20px;
+}
+
+.buttons{
+  display:grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-auto-rows: 80px;
+  gap:16px;
+  justify-content:center;
+}
+
+/* Buttons */
+.btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  width:80px;
+  height:80px;
+
+  border:none;
+  border-radius:18px;
+
+  font-size:22px;
+  font-weight:500;
+
+  background:#334155;   /* keep your color */
+  color:#e2e8f0;
+
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+/* Operators */
+.op{
+  background:#0284c7;
+}
+
+.op:hover{
+  background:#0369a1;
+}
+/* Red delete */
+.red{
+  background:#ef4444;
+}
+
+.red:hover{
+  background:#dc2626;
+}
+
+/* Equals */
+.equals{
+  background:#22c55e;
+}
+
+.equals:hover{
+  background:#16a34a;
+}
+
+/* Zero wide */
+.zero{
+  grid-column: span 2;
+  width:176px;   /* 80 + gap(16) + 80 */
+}
+.container{
+  display:flex;
+  gap:60px;              /* more space like screenshot */
+  align-items:center;
+}
+.history{
+  background: linear-gradient(145deg,#1e293b,#0f172a);
+  padding:25px;
+  border-radius:25px;
+  width:320px;
+  color:#e2e8f0;
+  max-height:500px;
+  overflow-y:auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.history-item{
+  padding:12px;
+  border-bottom:1px solid #334155;
+}
+
+.history-item b{
+  font-size:18px;
+}
+
+.history h2{
+  margin-bottom:10px;
+}
+

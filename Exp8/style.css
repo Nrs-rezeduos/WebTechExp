@@ -1,0 +1,80 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#020617,#0f172a);
+  color:#e2e8f0;
+  padding:40px 20px;
+}
+
+/* Container */
+.container{
+  max-width:800px;
+  margin:auto;
+}
+
+/* Header */
+.header-card{
+  text-align:center;
+  padding:25px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#1e293b,#020617);
+  border:1px solid #334155;
+  margin-bottom:20px;
+}
+
+.header-card h1{
+  color:#60a5fa;
+}
+
+.header-card p{
+  font-size:14px;
+  color:#94a3b8;
+}
+
+/* Cards */
+.card{
+  background:#020617;
+  border:1px solid #334155;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card h2{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+/* Steps */
+.step{
+  margin-top:20px;
+}
+
+.step h3{
+  font-size:16px;
+  margin-bottom:10px;
+  color:#22c55e;
+}
+
+/* Images */
+.step img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #334155;
+  transition:0.3s;
+}
+
+.step img:hover{
+  transform:scale(1.02);
+}
